@@ -6,19 +6,12 @@ import ConfettiExplosion from 'react-confetti-explosion'
 
 const App = () => {
 
-  // const allNewDice = () => {
-  //   return Array.from({length: 10}, () => Math.ceil(Math.random() * 6))
-  // }
-
-  //const [initialDice, setInitialDice] = useState(allNewDice())
-
   const initDiceObj = (fresh) => {
     const newDice = []
     const newVal = () => fresh ? '?' : Math.ceil(Math.random() * 6)
     
     for (let i = 0; i < 10; i++) {
       let dice = {
-        //value: Math.ceil(Math.random() * 6),
         value: newVal(),
         isHeld: false,
         id: nanoid()
@@ -138,7 +131,7 @@ const App = () => {
           {tenzies && 
             <ConfettiExplosion 
               duration={8000} 
-              floorHeight={600}
+              floorHeight={650}
               particleCount={250}
               particleSize={20}
             />}
