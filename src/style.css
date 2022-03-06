@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Karla', sans-serif;
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer-container {
+    width: 360px;
+    height: 380px;
+    background: #0b2434;
+}
+.inner-container {
+    width: 333px;
+    height: 333px;
+    background: #d5d5d5;
+    margin: 23px 14px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    position: relative;
+    width: 333px;
+    display: flex;
+}
+.header .rolls {
+    position: absolute;
+    left: 10px;
+    margin: 8px;
+}
+.header strong {
+    font-size: 18px;
+}
+.header .timer {
+    position: absolute;
+    left: 230px;
+    margin: 8px;
+}
+.title {
+    margin-top: 33px;
+}
+.inner-container .instructions {
+    display: flex;
+    text-align: center;
+    width: 245px;
+    margin: 0 43.5px;
+    font-size: 13.5px;
+    line-height: 16px;
+    color: #4a4e74;
+}
+.multi-dice {
+    display: flex;
+    justify-content: center;
+    gap: 18.65px;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0px;
+}
+.roll-button {
+    background: #5035ff;
+    width: 140px;
+    font-weight: bold;
+    color: white;
+    padding: 6px 21px;
+    border-radius: 4px;
+    box-shadow: 0 3.2px 7.68px rgb(0, 0, 0, 0.18);
+    margin-top: 26px;
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+.roll-button:focus {
+    outline: none;
+}
+.roll-button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
