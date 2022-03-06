@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    #runtime-versions:
+      # nodejs: 14
+    commands:
+      # install Node 16
+      # curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+      # apt install -y nodejs
+      # install yarn?
+      # install npm
+      - echo Installing npm............
+      - npm install
+
+    pre-build:
+      commands:
+        # install dependencies
+    build:
+      commands:
+        # tests
+        # build
+        - echo Running build.............
+        - npm run build
+    artifacts:
+      files:
+        - "**/*"
+      discard-paths: no
+      base-directory: dist
