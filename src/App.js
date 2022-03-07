@@ -126,6 +126,7 @@ const App = () => {
 //  console.log(diceObjElements)
   return (
     <main>
+      <h1>Tenzies game hosted using AWS</h1>
       <div className='outer-container'>
         <div className='inner-container'>
           {tenzies && 
